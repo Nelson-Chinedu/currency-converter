@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency Converter app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h2 class="caption">currency converter <span class="time" id="currentDate"></span></h2>
+            <p class="hr"></p>
+        </div>
+    </header>
+    <section class="main-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <marquee><p class="text">Your Exchange rate is <span id="rate">0.00</span></p></marquee>
+                </div>
+            </div>
+            <div class="row inputs">
+                <div class="col-md-12 col-sm-12">
+                    <input type="number" id="currencyFrom" class="userInput" placeholder="from" onkeypress="return isNumberKey(event)">
+                    <select name="" id="currenciesA"><option value="" disabled selected>choose currency</option></select>
+                    <span class="sign">&nbsp; = &nbsp; </span>
+                    <input type="text" id="currencyTo" class="userInput" disabled="disabled" placeholder="to" value="">
+                    <select name="" id="currenciesB"><option value="" disabled selected>choose currency</option></select>
+                </div>
+                <div class="col-md-12">
+                    <button id="btn" class="btn btn-success btn-lg">convert currency</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-image"></div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

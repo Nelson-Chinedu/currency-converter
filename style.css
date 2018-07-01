@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    color: #000;
+    font-family: cursive,serif,sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+.main-header .caption{
+    background: transparent;
+    text-transform: capitalize;
+    font-size: 3em;
+    text-align: left;
+    margin-left: 3.5em;
+}
+.container .hr{
+    color: red;
+    width:90px;
+    border-bottom: 3px solid red;
+    margin-left: 11em;
+    padding: 0;
+
+}
+.time{
+    float: right;
+    font-size: 20px;
+    font-family: cursive,monospace,serif;
+    margin-top: 10px;
+}
+.main-section{
+    background: #111111;
+    height: auto;
+    padding: 20px 12px;
+    margin-top: 50px;
+}
+.text{
+    color: #fff;
+    font-size: 20px;
+}
+input[type=number],input[type=text]{
+    text-align: center;
+    padding: 10px 12px;
+    border-radius: 20px 0 0 20px;
+    font-size: 18px;
+    outline: 0px;
+    border: 0px;
+    margin: 15px 0px;
+}
+select{
+    font-size: 18px;
+    padding: 13px 12px;
+    border-radius:0 20px 20px 0;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    background: #f11919;
+    width: 20%;
+}
+.btn{
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.sign{
+    color: #fff;
+    font-size: 25px;
+    padding: 0px;
+    margin: 10px 5px;
+}
+.footer-image{
+    background-image: url(image/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40em;
+}
+
+@media only screen and (max-width:980px){
+ .main-header .caption{
+    font-size: 2em;
+    margin-left: 0px;
+}
+.container .hr{
+    color: red;
+    margin-left: 0px;
+
+}
+.time{
+    float: none;
+    margin-top: 0px;
+    text-align: left;
+}
+ input[type=number],input[type=text]{
+    width: 100%;
+    border-radius: 20px;
+}
+select{
+    width: 100%;
+    border-radius: 20px;
+}
+.footer-image{
+    background-image: url(image/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20em;
+}
+}
